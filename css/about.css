@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* About Us Section */
+.container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-body p, 
+.card-body ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+.card-body ul {
+    padding-left: 0;
+    text-align: left;
+}
+
+.card-body ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0.5rem;
+}
+
+.card-body ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.card-body ul li:hover::before {
+    color: #20c997;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 2rem 0;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer p, 
+.footer a {
+    font-size: 0.9rem;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #f8f9fa;
+    text-decoration: underline;
+}
+
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 1.5rem 0;
+}
+
+.footer .text-center {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer h5 {
+        margin-top: 1rem;
+    }
+}
